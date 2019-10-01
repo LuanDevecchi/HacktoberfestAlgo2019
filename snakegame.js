@@ -1,47 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  body {
-    background: black;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-  }
-  canvas {
-    border: 1px solid red;
-    background:green;
-  }
-  
-  #score{
-  	color: white;
-  }
-  
-  #dificuldade{
-  	color:yellow
-  }
-  
-  #time{
-  	color:green;
-  }
-  </style>
-</head>
-<body>
-<h1 id="time">Tempo 20s<h1>
-<h1 id="dificuldade">Dificuldade Facil</h1>
-<h1 id="score">Score 0.  Recorde 0.</h1>
-
-<canvas width="400" onclick="Anda()" height="400" id="game"></canvas>
-
-<script>
-
-
 //Paulo Henrique SN
 //github/paulohenriquesn
 
@@ -273,6 +229,3 @@ function Anda(){
 	}
 }
 requestAnimationFrame(loop);
-</script>
-</body>
-</html>
