@@ -1,0 +1,21 @@
+//  added first solution which I solved last year in O(n2), but now this is of O(n)
+
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> nmap = new HashMap<>();
+        for(int i=0; i<nums.length ; i++){
+            int diff =  target - nums[i];
+            if(nmap.containsKey(diff)){
+                return new int[]{nmap.get(diff), i};
+            }
+            // else{
+                // else add that key-value pair to map.
+                nmap.put(nums[i], i);
+            // }
+        }
+        
+        throw new IllegalArgumentException("No match found.");
+        
+    }
+}
