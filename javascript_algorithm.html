@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Match Example </title>
+        <meta name="viewport"
+              content="width=device-width, inital-scale=1">
+    </head>
+<body>
+    <h1> Math Example </h1>
+    <p> How truly random are JavaScript's random numbers? <br>
+        Let's generate 4000 of them and see! </p>
+<script>
+    var total = 0;
+    for(i=1; i<=4000; i++) {
+        var num = Math.random();
+        total += num;
+        if (i % 100 == 0) {
+            document.write ("Generated " + i + " numbers ...<br>");
+        }
+}
+var average = total / 4000;
+average = Math.round(average * 1000) / 1000;
+document.write("<h2>Average of 4000 numbers is: " +
+               average + "</h2>");
+</script>
+</body>
+</html>
