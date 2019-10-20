@@ -1,0 +1,14 @@
+using System;
+using System.Globalization;
+
+class Example 
+{
+    public static void Main() 
+    {
+    string name = "Kehinde";
+    name.ToUpper();
+    
+    Console.WriteLine(name);
+    Console.ReadLine();
+    }
+}
