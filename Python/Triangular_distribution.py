@@ -9,7 +9,7 @@ random values from the triangular distribution. It then plots the histogram of t
 import numpy as np
 import matplotlib.pyplot as plt
 
-def triangular_distr(min,mode,max,seed,no_random_values):
+def triangular_distr(min,mode,max,no_random_values):
     # draw random values
     random_values = np.random.triangular(min,mode,max,size=no_random_values)
     # plot the histogram
