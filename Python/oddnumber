@@ -1,0 +1,14 @@
+# Asks for a positive odd number less than 10 and checks if the
+# number entered fulfills the requirements.
+
+num = int(input("Give a positive odd number under 10: "))
+if num not in [1, 3, 5, 7, 9]:
+    print("Wrong input!")
+    if num < 0:
+        print("Negative number!")
+    elif num >= 10:
+        print("Too big!")
+    else:
+        print("You have given an even number!")
+else:
+    print("Thank you!")
