@@ -1,0 +1,18 @@
+def reverse(s): #It returns the reverse of string
+	return s[::-1] 
+
+def isPalindrome(s): 
+	rev = reverse(s) 
+
+	# Comparing both strings 
+	if (s == rev): 
+		return True
+	return False
+
+s = "malayalam"
+ans = isPalindrome(s) 
+
+if ans == 1: 
+	print("Yes") 
+else: 
+	print("No") 
