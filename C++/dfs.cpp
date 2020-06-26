@@ -9,7 +9,7 @@ vector<int> finishtime;
 vector<int> visited;
 
 
-void dfs(int v)
+void DFS(int v)
 {
   cout<<v<<" ";
   visited[v]=1;
@@ -17,7 +17,7 @@ void dfs(int v)
   {
     if( visited[*iter] != 1 )
     {
-      dfs(*iter);
+      DFS(*iter);
     }
   }
 }
@@ -43,23 +43,11 @@ int main()
   }
 
 
-  // cout<<"Printing the Adjacency list\n";
-  //
-  // for(int i=0;i<v;i++)
-  // {
-  //   cout<<"For the vertex "<<i<<endl;
-  //   for(auto iterator = g[i].begin() ; iterator != g[i].end() ; iterator++ )
-  //   {
-  //       cout<<i<< *iterator<<" ";
-  //   }
-  // }
-
-
 cout<<endl<<"DFS OF GRAPH"<<endl;
 for(int u: g[v])                                        //Restart dfs
 {
   if(!visited[u])
-  dfs(u);
+  DFS(u);
 }
 
   return 0;
